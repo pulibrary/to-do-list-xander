@@ -7,7 +7,7 @@
     <table class="table">
       <thead>
         <tr>
-          <th colspan="4"></th>
+          <th colspan="3"></th>
         </tr>
       </thead>
 
@@ -15,7 +15,6 @@
         <% @todos.each do |todo| %>
           <tr>
             <td><%= todo.description %></td>
-            <td><%= link_to 'Show', todo %></td>
             <td><%= link_to 'Edit', edit_todo_path(todo) %></td>
             <td><%= link_to 'Remove', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
